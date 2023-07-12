@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title> ITECO Nepal |  Dedicated to Quality</title>
+    <link rel="shortcut icon" href="http://www.iteconepal.com/assets/images/1.png">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="This is default page of ITECO">
+    <meta name="keywords" content="ITECO">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <img src="images/logoo.png" alt="">
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>        
+        <li>
+            <a href="#">About 
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Services</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slideshow-container slider">
+    <div class="mySlides fade">
+      <img src="images/bannr.png" >
+      <div class="text">Welcome To ITECO Nepal<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ratione harum in id.
+         Dolorum dolor nesciunt, facilis nihil ipsa excepturi eaque earum explicabo molestias quo ratione delectus
+          perferendis iusto atque.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/bnr.png">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="  .jpg">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center" class="dott">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+
+    <div class="about">
+      <div class="about-text">
+        <span class="about-title">About</span>
+        ITECO Nepal (P) Ltd. is an engineering consulting company founded in 3rd May,1987 by the group of experienced professionals. Within a short period, ITECO Nepal has grown into one of the most reputed companies of Nepal. Today it’s activities cover a whole range of services including engineering design and construction, project planning and preparation, institutional buildup, technical assistance and training, advisory services and all aspects of project implementation......
+      <a href="#" class="read">Read More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="aboutimage"></div>
+
+    </div>
+
+
+    <div class="services">
+      <div class="service">
+        <h1>our services</h1>
+        <div class="svs1">
+          <a href="#" class="div1">
+              <img src="images/transport.jpg" alt="">
+              <p>Transportation</p>
+          </a>
+          <a href="#" class="div2">
+              <img src="images/water.jpg" alt="">
+              <p>Water Resources</p>
+          </a>
+          <a href="#" class="div3">
+              <img src="images/indus.jpg" alt="">
+              <p>Industrial</p>
+          </a>
+          <a href="#" class="div3">
+            <img src="images/indus.jpg" alt="">
+            <p>Industrial</p>
+        </a>
+        </div>
+        <div class="svs2">
+          <a href="#" class="div4">
+            <img src="images/inf.jpg" alt="">
+            <p>Infrastructure</p>
+        </a>
+        <a href="#" class="div5">
+            <img src="images/energy.jpg" alt="">
+            <p>Energy</p>
+        </a>
+        <a href="#" class="div6">
+            <img src="images/hydro.png" alt="">
+            <p>Hydropower</p>
+        </a>
+        <a href="#" class="div6">
+          <img src="images/hydro.png" alt="">
+          <p>Hydropower</p>
+      </a>
+        </div>
+      <a href="#" class="read">See More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+
+
+
+    <div class="carousel">
+      <div class="logo">OUR PROJECTS</div>
+      <div class="carousel-bg-wrapper"></div>
+      <div class="carousel-inner">
+          <div class="carousel-indicators">
+              <span class="line"></span>
+              <span class="number"></span>
+              <span class="number"></span>
+              <span class="number"></span>
+              <span class="number"></span>
+              <span class="number"></span>
+          </div>
+
+          <div class="carousel-control">
+            <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+          </div>
+
+          <div class="content-wrapper"></div>
+          <div class="slide-wrapper">
+              <div class="slide"></div>
+          </div>
+      </div>    
+  </div>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+<script>
+  
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+//carousel
+
+const listItem=[
+            {
+                title:"Project 1",
+                describe:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore! Voluptates dolore cum dolorum vitae ut beatae ab tempore non dignissimos eaque ullam veritatis velit, laudantium iusto modi vero ex?",
+                image:"images/bg.jpg",
+                bgcolor:"#606181",
+            },
+            {
+                title:"Project 2",
+                describe:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore! Voluptates dolore cum dolorum vitae ut beatae ab tempore non dignissimos eaque ullam veritatis velit, laudantium iusto modi vero ex?",
+                image:"images/bg.jpg",
+                bgcolor:"#56363b",
+            },
+            {
+                title:"Project 3",
+                describe:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore! Voluptates dolore cum dolorum vitae ut beatae ab tempore non dignissimos eaque ullam veritatis velit, laudantium iusto modi vero ex?",
+                image:"images/bg.jpg",
+                bgcolor:"#7e7673",
+            },
+            {
+                title:"title",
+                describe:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore! Voluptates dolore cum dolorum vitae ut beatae ab tempore non dignissimos eaque ullam veritatis velit, laudantium iusto modi vero ex?",
+                image:"images/bg.jpg",
+                bgcolor:"#674c6b",
+            },
+            {
+                title:"title",
+                describe:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore! Voluptates dolore cum dolorum vitae ut beatae ab tempore non dignissimos eaque ullam veritatis velit, laudantium iusto modi vero ex?",
+                image:"images/bg.jpg",
+                bgcolor:"#5c4e67",
+            }
+        ];
+
+        const slide=document.querySelector(".slide-wrapper .slide");
+        for(let i=0;i<listItem.length;i++){
+            slide.innerHTML+=`
+                <div class="item-wrapper">
+                    <div class="item" style="--bg:${listItem[i].bgcolor}">
+                        <img src="${listItem[i].image}" alt=""/>
+                    </div>
+                </div>
+            `
+        }
+
+        const backgroundWrapper=document.querySelector(".carousel-bg-wrapper");
+        for(let i=0;i<listItem.length;i++){
+           backgroundWrapper.innerHTML+=`
+           <img src="${listItem[i].image}" alt="" class="carousel-bg"/>
+           `;
+        }
+        const contentWrapper=document.querySelector(".content-wrapper");
+        for(let i=0;i<listItem.length;i++){
+           contentWrapper.innerHTML+=`
+                <div class="content">
+                    <h1 class="name" style="--i:0">${listItem[i].title}</h1>
+                    <div class="describe" style="--i:1">
+                        <p>${listItem[i].describe}</p>
+                    </div>
+                    <button style="--i:3">More Details</button>
+                </div>
+           `;
+        }
+        const backgrounds=document.querySelectorAll(".carousel-bg");
+        const indicatorNumbers=document.querySelectorAll(".carousel-indicators .number");
+        const contents=document.querySelectorAll(".content");
+        const items=document.querySelectorAll(".slide .item-wrapper");
+        const prev=document.querySelector(".carousel-control .prev");
+        const next=document.querySelector(".carousel-control .next");
+
+        let currentIndex=0;
+        const setActive=(index)=>{
+            currentIndex=index;
+
+            if(currentIndex==0) 
+                prev.disabled=true;
+            else 
+                prev.disabled=false;
+
+            if(currentIndex==listItem.length-1) 
+                next.disabled=true;
+            else 
+                next.disabled=false;
+
+            backgrounds.forEach((background)=>{
+                background.classList.remove("active");
+            });
+            backgrounds[currentIndex].classList.add("active");
+
+            contents.forEach((content)=>{
+                content.classList.remove("active");
+            });
+            contents[currentIndex].classList.add("active");
+
+            indicatorNumbers.forEach((number)=>{
+                number.classList.remove("active");
+            });
+            indicatorNumbers[currentIndex].classList.add("active");
+
+            items.forEach((item)=>{
+                item.classList.remove("active");
+            });
+            items[currentIndex].classList.add("active");
+        };
+        setActive(currentIndex);
+
+        prev.addEventListener("click",()=>{
+            currentIndex--;
+            slide.style=`--i:${currentIndex}`;
+            setActive(currentIndex);
+        })
+        next.addEventListener("click",()=>{
+            currentIndex++;
+            slide.style=`--i:${currentIndex}`;
+            setActive(currentIndex);
+        })
+
+
+</script>
+
+</body>
+</html>
